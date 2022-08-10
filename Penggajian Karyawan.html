@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            UAS
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            Program Penggajian PT. SATU MALAM 2 CINTA
+        </h1>
+        <br>
+        <hr>
+        <form method="POST" action=""></form>
+            <table width="100%">
+                <tr>
+                    <td>Nama Pegawai</td>
+                    <td>:</td>
+                    <td><input type="text" id="nama" size="39"</td>
+                </tr>
+
+                <tr>
+                    <td>Jam Kerja</td>
+                    <td>:</td>
+                    <td><input type="text" id="jam" size="39"</td>
+                </tr>
+
+                <tr>
+                    <td>Upah per Jam</td>
+                    <td>:</td>
+                    <td><input type="text" id="upah" size="39"</td>
+                </tr>
+
+                <tr>
+                    <td>Anak</td>
+                    <td>:</td>
+                    <td><input type="text" id="jumlah" size="39"</td>
+                </tr>
+            </table>
+            <br>
+            <hr>
+            <br>
+            <table width="100%">
+                <tr>
+                    <td>Gaji</td>
+                    <td>:</td>
+                    <td><textarea id="gaji"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Tunjangan Anak 10%</td>
+                    <td>:</td>
+                    <td><textarea id="tunjangan"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Total Gaji</td>
+                    <td>:</td>
+                    <td><textarea id="total"></textarea></td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+        <br>
+        <input onclick="hasil()" type="submit" value="Proses" name="Bproses" >
+        <input href="" type="reset" value="Hapus" name="Bhapus">
+        <script type="text/javascript" src="penggajian.js"></script>
+        <script>
+            function hasil()
+            {
+                var jam=parseFloat (document.getElementById('jam').value);
+                var upah=parseFloat(document.getElementById("upah").value);
+                var anak=parseFloat(document.getElementById("anak").value);
+                var gaji=jam*upah;
+                document.getElementById("gaji").innerHTML=gaji;
+                var tunjangan = gaji*0.1*anak;
+                document.getElementById("tunjangan").innerHTML="Rp "+tunjangan;
+                var total = gaji+tunjangan;
+                document.getElementById("total").innerHTML="Rp "+total;
+            }
+        </script>
+    </body>
+</html>
