@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS</title>
+</head>
+<body>
+    <h1>
+        Form Pembelian Barang
+    </h1>
+    <br>
+    <hr>
+    <form method="POST">
+        <table width="100%">
+            <tr>
+                <td>Nama Barang</td>
+                <td>:</td>
+                <td>
+                    <select size="1" name="nama_barang">
+                        <option>Monitor</option>
+                        <option>Motherboard</option>
+                        <option>Processor</option> 
+                        <option>RAM</option>
+                        <option>Keyboard Gaming</option>
+                        <option>Headset Gaming</option>
+                        <option>Mouse Gaming</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jumlah</td>
+                <td>:</td>
+                <td><input type="text" id="jumlah" size="39"</td>
+            </tr>
+
+            <tr>
+                <td>Harga</td>
+                <td>:</td>
+                <td><input type="text" id="harga" size="39"</td>
+            </tr>
+
+            <tr>
+                <td>Total</td>
+                <td>:</td>
+                <td><input type="text" id="total" size="39"</td>
+            </tr>
+        </table>
+        <hr>
+        <br>
+        <p>
+            <input type="submit" value="Proses" name="Bsubmit">
+            <input type="reset" value="Reset" name="Breset">
+        </p>
+    </form>
+</body>
+</html>
