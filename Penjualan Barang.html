@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            UAS
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            Program Penjualan Barang
+        </h1>
+        <br>
+        <hr>
+        <form method="POST" action=""></form>
+            <table width="100%">
+                <tr>
+                    <td>Nama Barang</td>
+                    <td>:</td>
+                    <td><input type="text" id="barang" size="39"</td>
+                </tr>
+
+                <tr>
+                    <td>Harga</td>
+                    <td>:</td>
+                    <td><input type="text" id="harga" size="39"</td>
+                </tr>
+
+                <tr>
+                    <td>Jumlah</td>
+                    <td>:</td>
+                    <td><input type="text" id="jumlah" size="39"</td>
+                </tr>
+            </table>
+            <br>
+            <hr>
+            <br>
+            <table width="100%">
+                <tr>
+                    <td>Total</td>
+                    <td>:</td>
+                    <td><textarea id="total"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Diskon</td>
+                    <td>:</td>
+                    <td><textarea id="dis"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Bayar</td>
+                    <td>:</td>
+                    <td><textarea id="bayar"></textarea></td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+        <br>
+        <input type="submit" value="Proses" name="Bproses" onclick="hasil()">
+        <input type="reset" value="Hapus" name="Bhapus">
+        <script type="text/javascript" src="penjualan.js"></script>
+    </body>
+</html>
