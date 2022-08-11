@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS</title>
+</head>
+<body>
+    <h1>PROGRAM PENJUALAN MOTOR</h1>
+    <TABLE BORDER="l">
+        <TR ALIGN="CENTER" BGCOLOR="Orange">
+            <TD>Merk Motor</TD>
+            <TD>Harga</TD>
+        </TR>
+        
+        <TR>
+            <TD>Honda</TD>
+            <TD>15.000.000</TD>
+        </TR>
+        
+        <TR>
+            <TD>Yamaha</TD>
+            <TD>14.000.000</TD>
+        </TR>
+    
+        <TR>
+            <TD>Suzuki</TD>
+            <TD>13.000.000</TD>
+        </TR>
+    </TABLE>
+    <br>
+    <TABLE BORDER="l">
+        <TR ALIGN="CENTER" BGCOLOR="LightBlue">
+            <TD>Aksesoris</TD>
+            <TD>Harga</TD>
+        </TR>
+        
+        <TR>
+            <TD>Velg</TD>
+            <TD>450.000</TD>
+        </TR>
+        
+        <TR>
+            <TD>Helm</TD>
+            <TD>250.000</TD>
+        </TR>
+    
+        <TR>
+            <TD>Jaket</TD>
+            <TD>300.000</TD>
+        </TR>
+    </TABLE>
+    <hr>
+    <br>
+    <form method="POST" action="" name="elektronik">
+        <table width="100%">
+            <tr>
+                <td>Merk Motor</td>
+                <td>:</td>
+                <td>
+                    <select size="1" name="provinsi">
+                        <option>HONDA</option>
+                        <option>YAMAHA</option>
+                        <option>SUZUKI</option> 
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Aksesoris</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="motor" value="velg_racing">Velg Racing<br>
+                    <input type="checkbox" name="motor" value="helm">Helm<br>
+                    <input type="checkbox" name="motor" value="jaket">Jaket
+                </td>
+            </tr>
+
+            <tr>
+                <td>Cara Pembayaran</td>
+                <td>:</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="payment" value="tunai">Tunai
+                    <input class="form-check-input" type="radio" name="payment" value="kredit">Kredit
+                </td>
+            </tr>
+
+            <tr>
+                <td>Harga</td>
+                <td>:</td>
+                <td><input type="text" name="nama" size="39"</td>
+            </tr>
+
+            <tr>
+                <td>Bunga/Diskon</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="alamat" size="39">
+                </td>
+            </tr>
+
+           
+
+            <tr>
+                <td>Total</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="alamat" size="39">
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <input type="submit" value="Proses" name="Bproses">
+            <input type="reset" value="Reset" name="Breset">
+        </p>
+    </form>
+</body>
+</html>
